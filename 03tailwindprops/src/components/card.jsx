@@ -1,15 +1,17 @@
 import React from 'react'
 
-function Card() {
+function Card({errorName,errorDef="sorry, something went wrong"}) {
 //   const [count, setCount] = useState(0)
+// console.log(props);
+
 
   return (
     <>
     <div class="flex items-center justify-center px-2 md:px-0 bg-white">
         <div>
-          <p class="text-sm font-semibold text-black">404 error</p>
+          <p class="text-sm font-semibold text-black">{errorName} error</p>
           <h1 class="mt-3 text-2xl font-semibold text-gray-800 md:text-3xl">
-            We can&#x27;t find that page
+            {errorDef}
           </h1>
           <p class="mt-4 text-gray-500">
             Sorry, the page you are looking for doesn&#x27;t exist or has been moved.

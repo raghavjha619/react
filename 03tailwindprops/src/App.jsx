@@ -9,7 +9,8 @@ function App() {
 
   return (
     <>
-    <Card />
+    <Card errorName = "404" errorDef = "We can&#x27;t find that page"/>
+    <Card errorName = "undefined"/>
     </>
   )
 }
